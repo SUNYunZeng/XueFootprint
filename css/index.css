@@ -25,8 +25,8 @@
 #info_bar{
     margin-top: 55px;
     height: calc(100% - 55px);
-    width: 25%; 
-    min-width: 260px; 
+    width: 28%; 
+    min-width: 180px; 
     position: absolute; 
     left: 0; 
     bottom: 0; 

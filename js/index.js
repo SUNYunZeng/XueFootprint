@@ -4,7 +4,7 @@ $(function () {
             map: 'cn_merc_en',
             backgroundColor: '#253449',
             zoomMin: 0.9,
-            zoomMax: 4.4,
+            zoomMax: 20,
             focusOn: {
                 x: 0.55,
                 y: 2,
