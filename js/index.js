@@ -74,7 +74,7 @@ $(function () {
                     } else {
                         $('#info_bar_photos').empty()
                     }
-                    $('#info_bar_close_btn').click(function(){
+                    $('#info_bar_close_btn').click(function () {
                         $('#info_bar').fadeOut('fast');
                     });
                 }
@@ -88,7 +88,7 @@ $(function () {
     $('body').on('click', '.info_bar_photo', function () {
         var _this = $(this);
         imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
-    })  
+    })
     $.getJSON('/data/config.json', function (data) {
         initMap(data)
     });
@@ -136,7 +136,7 @@ function imgShow(outerdiv, innerdiv, bigimg, _this) {
         $(this).fadeOut("fast");
     });
 
-    
+
 }
 
 function lovexhjSitetime() {
@@ -148,7 +148,7 @@ function lovexhjSitetime() {
     var years = days * 365
     var today = new Date()
     var todayYear = today.getFullYear()
-    var todayMonth = today.getMonth()+1
+    var todayMonth = today.getMonth() + 1
     var todayDate = today.getDate()
     var todayHour = today.getHours()
     var todayMinute = today.getMinutes()
@@ -164,5 +164,10 @@ function lovexhjSitetime() {
     var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
         diffMinutes * minutes) / seconds)
     document.getElementById("lovexhjSitetime").innerHTML = "我们相恋了" + diffYears + "年" + diffDays + "天" +
-        diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒啦"
+        diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒啦";
+
+    $('#map').height(3 / 6 * $('#map').width())
+    window.onresize = function () {
+        $('#map').height(1 / 2 * $('#map').width())
+    }
 }

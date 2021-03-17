@@ -16,9 +16,7 @@
 
 #map{
     position: relative;
-    margin: 2%;
-    width: 70vw;
-    height: 45vw;
+    width: 100%;
     background-color:#353535
 }
 
