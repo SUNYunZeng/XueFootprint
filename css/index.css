@@ -26,7 +26,7 @@
     margin-top: 55px;
     height: calc(100% - 55px);
     width: 28%; 
-    min-width: 150px; 
+    min-width: 280px; 
     position: absolute; 
     left: 0; 
     bottom: 0; 
@@ -62,11 +62,14 @@
     position: relative;
     height: 35px;
     width: 100%;
-    top: 0;
+    top: 8px;
     left: 0;
     text-align: center;
     font-size: x-large;
     border-bottom: solid silver 2px;
+    font-size: 1.2em;
+    font-weight: 550;
+    margin-bottom:5px;
 }
 
 #info_bar_desc{
@@ -76,9 +79,14 @@
     margin: 0;
     width: calc(100% - 16px);
     bottom: 0;
-    font-size: medium;
+    font-size: 0.9em;
     white-space: pre-line;
     overflow:auto;
+    font-weight: normal;
+    font-family:courier;
+    background: linear-gradient(to right, green, blue);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #info_bar_photos{

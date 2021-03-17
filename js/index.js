@@ -95,6 +95,7 @@ $(function () {
 
     lovexhjSitetime();
 
+    setInterval(changeColor,200); 
 });
 
 function imgShow(outerdiv, innerdiv, bigimg, _this) {
@@ -138,6 +139,13 @@ function imgShow(outerdiv, innerdiv, bigimg, _this) {
 
 
 }
+
+function changeColor(){
+    var color = "#f00|#0f0|#00f|#880|#808|#088|green|blue|gray";
+    color = color.split("|");
+    document.getElementById("blink").style.color = color[parseInt(Math.random() * color.length)];
+}
+
 
 function lovexhjSitetime() {
     window.setTimeout("lovexhjSitetime()", 1000);
