@@ -12,19 +12,21 @@
     position: relative;
     height: 500px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 #map{
+    box-sizing: border-box;
     position: relative;
     width: 100%;
-    background-color:#353535
+    height: 75%;
 }
 
 #info_bar{
     margin-top: 55px;
     height: calc(100% - 55px);
     width: 25%; 
-    min-width: 330px; 
+    min-width: 300px; 
     position: absolute; 
     left: 0; 
     bottom: 0; 

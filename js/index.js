@@ -166,8 +166,8 @@ function lovexhjSitetime() {
     document.getElementById("lovexhjSitetime").innerHTML = "我们相恋了" + diffYears + "年" + diffDays + "天" +
         diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒啦";
 
-    $('#map').height(3 / 6 * $('#map').width())
-    window.onresize = function () {
-        $('#map').height(1 / 2 * $('#map').width())
-    }
+    // $('#map').height(0.65 * $('#map').width())
+    // window.onresize = function () {
+    //     $('#map').height(0.65 * $('#map').width())
+    // }
 }
