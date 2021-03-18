@@ -1,4 +1,4 @@
-$(function () {
+$(function(){
     var initMap = function (data) {
         $('#map').vectorMap({
             map: 'cn_merc_en',
@@ -92,11 +92,7 @@ $(function () {
     $.getJSON('/data/config.json', function (data) {
         initMap(data)
     });
-
-    lovexhjSitetime();
-
-    setInterval(changeColor,200); 
-});
+})
 
 function imgShow(outerdiv, innerdiv, bigimg, _this) {
     var src = _this.attr("src");
@@ -137,41 +133,5 @@ function imgShow(outerdiv, innerdiv, bigimg, _this) {
         $(this).fadeOut("fast");
     });
 
-
-}
-
-function changeColor(){
-    var color = "#ffb2b2|#ffb2d8|#ffb2ff|#d8b2ff|#b2b2ff|#b2d8ff|#b2ffff|#b2ffd8|#b2ffb2|#d8ffb2|#ffffb2|#ffd8b2";
-    color = color.split("|");
-    document.getElementById("blink").style.color = color[parseInt(Math.random() * color.length)];
-}
-
-
-function lovexhjSitetime() {
-    window.setTimeout("lovexhjSitetime()", 1000);
-    var seconds = 1000
-    var minutes = seconds * 60
-    var hours = minutes * 60
-    var days = hours * 24
-    var years = days * 365
-    var today = new Date()
-    var todayYear = today.getFullYear()
-    var todayMonth = today.getMonth() + 1
-    var todayDate = today.getDate()
-    var todayHour = today.getHours()
-    var todayMinute = today.getMinutes()
-    var todaySecond = today.getSeconds()
-    // 时间设置
-    var t1 = Date.UTC(2017, 11, 04, 15, 15, 00)
-    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond)
-    var diff = t2 - t1
-    var diffYears = Math.floor(diff / years)
-    var diffDays = Math.floor((diff / days) - diffYears * 365)
-    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours)
-    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes)
-    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
-        diffMinutes * minutes) / seconds)
-    document.getElementById("lovexhjSitetime").innerHTML = "我们相恋了" + diffYears + "年" + diffDays + "天" +
-        diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒啦";
 
 }
