@@ -1,133 +1,193 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="referrer" content="never">
+	<meta charset="utf-8">
 	<title>薛洁的窝</title>
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery-jvectormap-2.0.5.min.js"></script>
-	<script type="text/javascript" src="js/jquery-jvectormap-cn-merc-en.js"></script>
+	<meta name="viewport" content="width=menu-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/page.css" />
+	<link href="plugins/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="plugins/css/icons.min.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="https://sunyunzeng.com/images/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/title_move_font.css">
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="js/jquery.quoterotator.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="/js/index.js"></script>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/animate.css">
 	<script>
 		jQuery(document).ready(function ($) {
 			$('#words').quoteRotator();
 		});
 	</script>
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
-	<link href="css/jquery-jvectormap-2.0.5.css" rel="stylesheet" type="text/css" media="screen">
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css">
 </head>
 
 <body>
-
-	<div id="stars"></div>
-	<div id="stars2"></div>
-	<div id="stars3"></div>
-	<div id="main_title">
-		<center>
-			<h1 id="blink">薛洁的窝</h1>
-		</center>
-		<hr style="border:1 dashed #987cb9" width="90%" color="#987cb9" size="5">
-	</div>
-
-	<div id="container">
-
-		<div id="beauty_words">
-			<h2 class="color_txt">··· 樱花雨 ···</h2>
-			<hr style="border:1 dashed #987cb9" width="100%" color="#987cb9" size="5">
-			<div id="words">
-				<ul class="word-container">
-
-					<li data-author="">现实断裂的地方~梦汇成了海.</li>
-					<li data-author="" data-easeout="fadeOutDown">家人闲坐、灯火可亲.</li>
-					<li data-author="--- Xue" data-easein="fadeInDown">
-						玻璃晴朗、橘子辉煌. </li>
-					<li data-author="---  Xue, 2021" data-easeout="bounceOut">
-						一个果子落了、一朵花开出来. </li>
-					<li data-author="--- Xue (1997 - )" data-easein="bounceIn">
-						山河随远、人间烟火. </li>
-					<li data-author="" data-easein="lightSpeedIn">
-						温柔半两、从容一生. </li>
-					<li data-author="--- By SYZ, (attributed)">
-						养一个月亮. </li>
-					<li data-author="">
-						春夏秋冬有你. </li>
-				</ul>
-				<div class="quote">
-					<blockquote>
-						<p class="quote-content"></p>
-					</blockquote>
-					<cite class="quote-author"></cite>
+	<div class="page" id="app">
+		<div class="nav-left" v-show="navLeftFlag" ref="navLeft">
+			<div class="LogoName" id="blink">
+				薛洁的窝
+			</div>
+			<div class="navDiv">
+				<div class="navName">导航</div>
+				<div class="nav-list">
+					<ul>
+						<li class="nav-tab a_active waves-effect">
+							<a href="html/home.html" class="li-a active" target="iframe"><i
+									class='bx bx-home-smile'></i> 主页
+								<!-- <span class="badge badge-pill badge-primary float-right">0</span> -->
+							</a>
+						</li>
+						<li class="nav-tab">
+							<a href="html/menu/footprint.html" class="li-a" target="iframe"><i
+									class='bx bx-home-smile'></i>
+								历史足迹</a>
+						</li>
+						<li class="nav-tab nav-ul">
+							<a href="javascript:void[0]" class="li-a" target="iframe"><i class='bx bx-layer'></i> 恋爱线
+								<i class='bx bx-chevron-right' style="float: right;"></i></a>
+							<div class="nav-box">
+								<a href="html/menu/lovetime.html" class="li-a-a" target="iframe">时间统计</a>
+							</div>
+							<div class="nav-box">
+								<a href="html/menu/lovevent.html" class="li-a-a" target="iframe">恋爱事件</a>
+							</div>
+						</li>
+						<li class="nav-tab nav-ul">
+							<a href="javascript:void[0]" class="li-a"><i class='bx bx-cog'></i> 日常随笔
+								<i class='bx bx-chevron-right' style="float: right;"></i></a>
+							<div class="nav-box">
+								<a href="html/menu/lovevent.html" class="li-a-a" target="iframe">书单</a>
+							</div>
+							<div class="nav-box">
+								<a href="html/menu/lovevent.html" class="li-a-a" target="iframe">电影</a>
+							</div>
+							<div class="nav-box">
+								<a href="html/menu/lovevent.html" class="li-a-a" target="iframe">相册</a>
+							</div>
+						</li>
+						<li class="nav-tab">
+							<a href="html/menu/lovevent.html" class="li-a" target="iframe"><i class='bx bx-home-smile'></i>
+								关于</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
+		<div class="nav-right" ref="navRight">
+			<div class="nav-top">
+				<div class="nav-button">
+					<button type="button" class="btn btn-primary btn-sm hiddenBtn" style="line-height: 10px;"
+						@click="isShowLeft">
+						<i class="bx bx-grid-alt" style="font-size: 16px;"></i>
+					</button>
+				</div>
 
-		<div>
-			<h2 class="color_txt">··· 历史足迹地图 ···</h2>
-			<hr style="FILTER: alpha(opacity=80,finishopacity=0,style=1)" width="100%" color="#987cb9" size="3">
-		</div>
-
-		<div id="map">
-			<div id="info_bar">
-				<div id="info_bar_paper">
-					<div id="info_bar_close_btn"><svg id="info_bar_close_btn_img" style="cursor: pointer;"
-							t="1615883535208" class="icon" viewBox="0 0 1024 1024" version="1.1"
-							xmlns="http://www.w3.org/2000/svg" p-id="2052" width="32" height="32">
-							<path
-								d="M512 74.666667C270.464 74.666667 74.666667 270.464 74.666667 512S270.464 949.333333 512 949.333333 949.333333 753.536 949.333333 512 753.536 74.666667 512 74.666667z m0 64c206.186667 0 373.333333 167.146667 373.333333 373.333333S718.186667 885.333333 512 885.333333 138.666667 718.186667 138.666667 512 305.813333 138.666667 512 138.666667z"
-								fill="#8a8a8a" p-id="2053"></path>
-							<path
-								d="M647.765333 376.234667a32 32 0 0 1 0 45.248L557.248 512l90.517333 90.517333a32 32 0 0 1-45.248 45.248L512 557.248l-90.517333 90.517333a32 32 0 0 1-45.248-45.248L466.752 512l-90.517333-90.517333a32 32 0 0 1 45.248-45.248L512 466.752l90.517333-90.517333a32 32 0 0 1 45.248 0z"
-								fill="#8a8a8a" p-id="2054"></path>
-						</svg></div>
-					<div id="info_bar_title">
-					</div>
-					<div id="info_bar_desc">
-					</div>
-					<div id="info_bar_photos">
+				<div class="words_title">
+					<div id="words">
+						<ul class="word-container">
+							<li data-author="">现实断裂的地方~梦汇成了海.</li>
+							<li data-author="" data-easeout="fadeOutDown">家人闲坐、灯火可亲.</li>
+							<li data-author="" data-easein="fadeInDown">
+								玻璃晴朗、橘子辉煌. </li>
+							<li data-author="" data-easeout="bounceOut">
+								一个果子落了、一朵花开出来. </li>
+							<li data-author="" data-easein="bounceIn">
+								山河随远、人间烟火. </li>
+							<li data-author="" data-easein="lightSpeedIn">
+								温柔半两、从容一生. </li>
+							<li data-author="">
+								养一个月亮. </li>
+							<li data-author="">
+								春夏秋冬有你. </li>
+						</ul>
+						<div class="quote">
+							<blockquote>
+								<p class="quote-content"></p>
+							</blockquote>
+							<cite class="quote-author"></cite>
+						</div>
 					</div>
 				</div>
+
+				<!-- <button type="button" class="btn btn-primary btn-sm showBtn" style="line-height: 10px; display: none;" onclick="showNavRight">
+						<i class="bx bx-expand" style="font-size: 16px;"></i>
+					</button> -->
 			</div>
-
-
-		</div>
-		<br>
-		<div id="loveBox">
-			<h2 class="color_txt">··· 恋爱线 ···</h2>
-			<hr style="FILTER: alpha(opacity=80,finishopacity=0,style=1)" width="100%" color="#987cb9" size="3">
-			<div class="textwidget custom-html-widget">
-				<div id="lovexhj" style="width: 100%; height: 100px; text-align: center; font-size: 1rem;">
-					<div id="lovexhjImage" style="width: 100%; min-width: 150px; margin: 0 auto;">
-						<!-- 左边的头像 -->
-						<img src="https://cdn.jsdelivr.net/gh/L-20021213/picture@latest/2020/09/18/ce811c68ff1b4eb9a5b6d2a784d07c31.png"
-							alt="love" style="width: 15%; min-width: 50px; border-radius: 50%;">
-						<!-- 中间的图片 -->
-						<img src="https://cdn.jsdelivr.net/gh/L-20021213/picture@latest/2020/09/18/lovelogo%20.gif"
-							alt="love" style="width: 15%; min-width: 50px; border-radius: 50%;">
-						<!-- 右边的头像 -->
-						<img src="https://cdn.jsdelivr.net/gh/L-20021213/picture@latest/2020/09/18/3db15cc33adda3afcdbc62e18fc8403f.png"
-							alt="love" style="width: 15%; min-width: 50px; border-radius: 50%;">
-					</div>
-					<p id="lovexhjSitetime"
-						style="font-size: 1.1rem;    margin-top: 16px;  background: linear-gradient(to right, red, orange);-webkit-background-clip: text;color: transparent;">
-						我们相恋了104天14小时47分钟19秒啦</p>
-				</div>
+			<div class="content-page" ref="cPage">
+				<iframe name="iframe" width="100%" height="100%" frameborder="0" src="html/home.html"></iframe>
 			</div>
 		</div>
-		<div>
-		</div>
 	</div>
+	<script src="js/vue.min.js"></script>
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			let navflag = false;
+			$('.nav-tab').click(function () {
+				$(this).siblings().each(function () {
+					$(this).removeClass('a_active');
+					// $(this).removeClass('a_active');
+					$(this).find('.nav-box').css('height', '0')
+					//关闭右侧箭头
+					if ($(this).attr('class').indexOf('nav-ul') != -1) {
+						$(this).find('.bx-chevron-right').css('transform', 'rotateZ(0deg)')
+						$(this).find('.bx-chevron-right').css('transition', 'all .5s')
+						$(this).removeClass('nav-show')
+						// $(this).find('div').removeClass('nav-box')
+					}
+				})
+				//当前选中
+				$(this).addClass('a_active')
+				$(this).find('.li-a').addClass('active')
+				// 打开右侧箭头
+				$(this).find('.bx-chevron-right').css('transform', 'rotateZ(90deg)')
+				$(this).find('.bx-chevron-right').css('transition', 'all .5s')
+				$(this).addClass('nav-show')
+				// $(this).find('div').addClass('nav-box')
+			})
+			/* 二级菜单a点击事件 */
+			$(".li-a-a").click(function () {
+				$(".li-a-a").each(function () {
+					$(this).removeClass('active-li-a');
+				})
+				$(this).addClass('active-li-a');
+			})
 
-	<div id="outerdiv">
-		<div id="innerdiv">
-			<img id="bigimg" />
-		</div>
-	</div>
+			function changeColor() {
+				var color =
+					"#ffb2b2|#ffb2d8|#ffb2ff|#d8b2ff|#b2b2ff|#b2d8ff|#b2ffff|#b2ffd8|#b2ffb2|#d8ffb2|#ffffb2|#ffd8b2";
+				color = color.split("|");
+				document.getElementById("blink").style.color = color[parseInt(Math.random() * color.length)];
+			}
+
+			setInterval(changeColor,200); 
+		})
+		const vue = new Vue({
+			el: '#app',
+			data: {
+				navLeftFlag: true
+			},
+			methods: {
+				isShowLeft() {
+					if (this.navLeftFlag) {
+						this.$refs.navRight.style.paddingLeft = '0px'
+						this.$refs.cPage.style.left = '0px';
+						this.navLeftFlag = false;
+						// this.$refs.navLeft.style.width = '0px';
+						// setTimeout(()=>{
+						// 	this.navLeftFlag = false;
+						// },200)
+					} else {
+						this.$refs.navRight.style.paddingLeft = '240px';
+						this.$refs.cPage.style.left = '240px';
+						this.navLeftFlag = true;
+						// this.$refs.navLeft.style.width = '240px';
+						// setTimeout(()=>{
+						// 	this.navLeftFlag = true;
+						// },200)
+					}
+				}
+			}
+		})
+	</script>
 </body>
 
 </html>
