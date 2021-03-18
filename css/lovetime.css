@@ -1,0 +1,19 @@
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.lovetime-container{
+    padding:20px;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content:center;
+}
+
+.lovetime-count{
+
+}
