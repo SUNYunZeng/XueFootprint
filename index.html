@@ -8,7 +8,16 @@
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery-jvectormap-2.0.5.min.js"></script>
 	<script type="text/javascript" src="js/jquery-jvectormap-cn-merc-en.js"></script>
+	<script src="js/jquery.quoterotator.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="/js/index.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script>
+		jQuery(document).ready(function ($) {
+			$('#words').quoteRotator();
+		});
+	</script>
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 	<link href="css/jquery-jvectormap-2.0.5.css" rel="stylesheet" type="text/css" media="screen">
 </head>
@@ -16,12 +25,43 @@
 <body>
 	<div id="main_title">
 		<center>
-			<h1 id="blink" >薛洁的窝</h1>
+			<h1 id="blink">薛洁的窝</h1>
 		</center>
 		<hr style="border:1 dashed #987cb9" width="90%" color="#987cb9" size="5">
 	</div>
 
 	<div id="container">
+
+		<div id="beauty_words">
+			<h2 class="color_txt">··· 樱花雨 ···</h2>
+			<hr style="border:1 dashed #987cb9" width="100%" color="#987cb9" size="5">
+			<div id="words">
+				<ul class="word-container">
+					
+					<li data-author="" >现实断裂的地方~梦汇成了海.</li>
+					<li data-author="" data-easeout="fadeOutDown">家人闲坐、灯火可亲.</li>
+					<li data-author="--- Xue" data-easein="fadeInDown">
+						玻璃晴朗、橘子辉煌. </li>
+					<li data-author="---  Xue, 2021" data-easeout="bounceOut">
+						一个果子落了、一朵花开出来. </li>
+					<li data-author="--- Xue (1997 - )" data-easein="bounceIn">
+						山河随远、人间烟火. </li>
+					<li data-author="" data-easein="lightSpeedIn">
+						温柔半两、从容一生. </li>
+					<li data-author="--- By SYZ, (attributed)">
+						养一个月亮. </li>
+					<li data-author="">
+						春夏秋冬有你. </li>
+				</ul>
+				<div class="quote">
+					<blockquote>
+					  <p class="quote-content"></p>
+					</blockquote>
+					<cite class="quote-author"></cite>
+				</div>
+			</div>
+		</div>
+
 		<div>
 			<h2 class="color_txt">··· 历史足迹地图 ···</h2>
 			<hr style="FILTER: alpha(opacity=80,finishopacity=0,style=1)" width="100%" color="#987cb9" size="3">
@@ -75,7 +115,6 @@
 			</div>
 		</div>
 		<div>
-
 		</div>
 	</div>
 

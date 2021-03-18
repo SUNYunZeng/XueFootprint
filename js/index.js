@@ -141,7 +141,7 @@ function imgShow(outerdiv, innerdiv, bigimg, _this) {
 }
 
 function changeColor(){
-    var color = "#f00|#0f0|#00f|#880|#808|#088|green|blue|gray";
+    var color = "#ffb2b2|#ffb2d8|#ffb2ff|#d8b2ff|#b2b2ff|#b2d8ff|#b2ffff|#b2ffd8|#b2ffb2|#d8ffb2|#ffffb2|#ffd8b2";
     color = color.split("|");
     document.getElementById("blink").style.color = color[parseInt(Math.random() * color.length)];
 }
@@ -174,8 +174,4 @@ function lovexhjSitetime() {
     document.getElementById("lovexhjSitetime").innerHTML = "我们相恋了" + diffYears + "年" + diffDays + "天" +
         diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒啦";
 
-    // $('#map').height(0.65 * $('#map').width())
-    // window.onresize = function () {
-    //     $('#map').height(0.65 * $('#map').width())
-    // }
 }

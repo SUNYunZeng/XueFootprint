@@ -10,7 +10,7 @@
 
 #loveBox{
     position: relative;
-    height: 500px;
+    margin-bottom: 150px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -107,6 +107,13 @@
     height: 45%;
     width: 45%;
     object-fit: scale-down;
+}
+
+#beauty_words{
+    position: relative;
+    height:180PX;
+    width: 100%;
+    overflow: hidden;
 }
 
 #outerdiv{
