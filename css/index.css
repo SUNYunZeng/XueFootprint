@@ -6,6 +6,7 @@
     padding-left: 10%;
     padding-right: 10%;
     box-sizing: border-box;
+    color: #FFF;
 }
 
 #loveBox{
@@ -136,7 +137,7 @@
 }
 
 .color_txt{
-    background: linear-gradient(to right, orange, blue);
+    background: linear-gradient(to right, orange, green);
     -webkit-background-clip: text;
     color: transparent;
 }
